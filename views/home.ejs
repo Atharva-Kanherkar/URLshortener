@@ -19,28 +19,6 @@
          <button type="submit">Generate</button>
         </form>
      </div>
-
-     <table border="1">
-        <thead>
-            <tr>
-                <th>Sno</th>
-                <th>Short ID</th>
-                <th>Redirect ID</th>
-                <th>Number of Clicks</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Add rows dynamically based on your data -->
-            <% /* Assuming 'urls' is an array containing your URL records */ %>
-            <% for (let i = 0; i < urls.length; i++) { %>
-                <tr>
-                    <td><%= i + 1 %></td>
-                    <td><%= urls[i].shortId %></td>
-                    <td><%= urls[i].redirectUrl %></td>
-                    <td><%= urls[i].visitHistory.length %></td> <!-- Adjust this based on your data structure -->
-                </tr>
-            <% } %>
-        </tbody>
-    </table>
+ 
 </body>
 </html>
